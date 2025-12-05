@@ -376,10 +376,80 @@ body {
     margin: 10px;
     padding: 10px;
 }
+#from-section-container>input:hover{
+   border: 2px solid black;
+}
+#from-section-container>input:focus{
+   border: 2px solid var(--main-color) !important;
+   outline: var(--main-color);
+}
+
 #input-4{
     height: 100px;
 }
+.form-btn{
+    margin: 30px auto !important;
+    background-color: var(--main-color);
+    color: var(--text-color-white);
+    font-weight: 600;
+    display: flex;
+}
+.form-btn:hover{
+    background-color: #3c099b;
+    color: var(--text-color-white);
+}
 
+
+/* Footer */
+footer {
+    position: relative;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    width: 100%;
+    padding: 80px 0 50px;
+    color: var(--text-color-white);
+}
+
+#footer-top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+#footer-top-second-section {
+    display: flex;
+    padding: 30px 60px;
+    gap: 100px;
+    flex-wrap: wrap; 
+}
+
+#footer-details {
+    width: 500px;
+    line-height: 30px;
+}
+
+#footer-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-top: 10px;
+}
+
+#footer-contact-section {
+    line-height: 40px;
+}
+#Footer-Last-Section{
+    padding-bottom: 0px; 
+    border-top: 2px solid white;
+    text-align: center;
+}
 
 @media screen and (max-width:1000px) {
 
