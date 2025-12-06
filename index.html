@@ -20,6 +20,22 @@
 </head>
 
 <body>
+    <!-- Loader -->
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-content">
+
+    <!-- Animated Image (Top) -->
+    <img src="./images/loader border animation" alt="Animation" class="animated-img">
+
+    <!-- Main Logo Image (Below animation) -->
+    <img src="./images/logo loder.jpeg" alt="Logo" class="preloader-logo ">
+
+
+  </div>
+</div>
+
+
 
     <nav class="navbar navbar-expand-lg  px-5 my-navbar">
         <div class="container-fluid">
@@ -265,5 +281,30 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+    <script>
+  const startTime = Date.now();
+
+  window.addEventListener("load", function () {
+    const minLoaderTime = 4000;
+    const elapsed = Date.now() - startTime;
+    const remaining = minLoaderTime - elapsed;
+
+    if (remaining <= 0) {
+      hidePreloader();
+    } else {
+      setTimeout(hidePreloader, remaining);
+    }
+  });
+
+  function hidePreloader() {
+    const pre = document.getElementById("preloader");
+    pre.style.opacity = '0';
+    pre.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => pre.style.display = 'none', 500);
+  }
+</script>
+
+
+
 
 </html>
