@@ -16,24 +16,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Loader -->
-<!-- Preloader -->
-<div id="preloader">
+    <!-- Preloader -->
+    <!-- <div id="preloader">
   <div class="preloader-content">
-
-    <!-- Animated Image (Top) -->
     <img src="./images/loader border animation" alt="Animation" class="animated-img">
-
-    <!-- Main Logo Image (Below animation) -->
     <img src="./images/logo loder.jpeg" alt="Logo" class="preloader-logo ">
-
-
   </div>
-</div>
+</div> -->
 
 
 
@@ -90,18 +85,18 @@
         <div id="hero-section-left-box">
             <h4>About Us</h4>
             <h1>Where Talent <br>
-                <span>
-                    Meets Opportunities
-                </span>
+                <span>Meets Opportunities</span>
             </h1>
             <p>The largest community engagement platform built to help talent.</p>
         </div>
-        <div id="hero-section-right-box">
+
+        <div id="hero-section-right-box" data-aos="fade-up-right">
             <img src="./images/hero-section.png" alt="">
         </div>
     </div>
-    <div class="container hero-section">
-        <div id="hero-section-left-box2">
+
+    <div class="container about-section">
+        <div id="about-section-left-box">
             <h4>About Us</h4>
             <h1>Where Talent <br>
                 <span>
@@ -110,7 +105,7 @@
             </h1>
             <p>The largest community engagement platform built to help talent.</p>
         </div>
-        <div id="hero-section-right-box3">
+        <div id="about-section-right-box">
             <h3>HiringMine</h3>
             <p>Rooted in the belief that every individual holds untapped brilliance, HiringMine is a talent discovery
                 and hiring platform where raw potential meets real opportunity.</p>
@@ -244,64 +239,70 @@
 
         </div>
     </div>
-     <footer>
-    <div id="footer-top-section">
-      <div id="footer-top-second-section">
-        <div id="footer-details">
-        <img src="./images/footer logo.png" alt="">
-        <p>Built with ❤️ in Pakistan for the World.</p>
-        <p>HiringMine bridges top talent and visionary companies through a smart, streamlined platform. Empowering
-          candidates to shine, and employers to hire better — faster. Your next opportunity, powered by technology and
-          trust.</p>
-      </div>
-      <div id="footer-media">
-        <h1>Follow us</h1>
-        <div id="footer-social-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-instagram"></i>
+    <footer>
+        <div id="footer-top-section">
+            <div id="footer-top-second-section">
+                <div id="footer-details">
+                    <img src="./images/footer logo.png" alt="">
+                    <p>Built with ❤️ in Pakistan for the World.</p>
+                    <p>HiringMine bridges top talent and visionary companies through a smart, streamlined platform.
+                        Empowering
+                        candidates to shine, and employers to hire better — faster. Your next opportunity, powered by
+                        technology and
+                        trust.</p>
+                </div>
+                <div id="footer-media">
+                    <h1>Follow us</h1>
+                    <div id="footer-social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-contact-section">
+                <h2>Contact Us</h2>
+                <p><i class="fa-regular fa-message"></i>
+                    muzammil.thedeveloper.com</p>
+                <p>Life at HiringMine</p>
+                <p>About HiringMine</p>
+            </div>
         </div>
-      </div>
-      </div>
-      <div id="footer-contact-section">
-        <h2>Contact Us</h2>
-        <p><i class="fa-regular fa-message"></i>
-          muzammil.thedeveloper.com</p>
-        <p>Life at HiringMine</p>
-        <p>About HiringMine</p>
-      </div>
-      </div>
-      <div id="Footer-Last-Section">
-      <p>Privacy Policy<span> Terms and Condition</span></p>
-       <p>Copyright Hiringmine 2025. All Rights Reserved</p>
-      </div>
-  </footer>
+        <div id="Footer-Last-Section">
+            <p>Privacy Policy<span> Terms and Condition</span></p>
+            <p>Copyright Hiringmine 2025. All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  const startTime = Date.now();
+  AOS.init();
+</script>
+<script>
+    const startTime = Date.now();
 
-  window.addEventListener("load", function () {
-    const minLoaderTime = 4000;
-    const elapsed = Date.now() - startTime;
-    const remaining = minLoaderTime - elapsed;
+    window.addEventListener("load", function () {
+        const minLoaderTime = 4000;
+        const elapsed = Date.now() - startTime;
+        const remaining = minLoaderTime - elapsed;
 
-    if (remaining <= 0) {
-      hidePreloader();
-    } else {
-      setTimeout(hidePreloader, remaining);
+        if (remaining <= 0) {
+            hidePreloader();
+        } else {
+            setTimeout(hidePreloader, remaining);
+        }
+    });
+
+    function hidePreloader() {
+        const pre = document.getElementById("preloader");
+        pre.style.opacity = '0';
+        pre.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => pre.style.display = 'none', 500);
     }
-  });
-
-  function hidePreloader() {
-    const pre = document.getElementById("preloader");
-    pre.style.opacity = '0';
-    pre.style.transition = 'opacity 0.5s ease';
-    setTimeout(() => pre.style.display = 'none', 500);
-  }
 </script>
 
 
