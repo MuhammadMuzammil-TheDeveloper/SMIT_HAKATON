@@ -217,6 +217,51 @@ body {
     display: block;
 }
 
+.about-section {
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    /* border: 1px solid red; */
+}
+
+#about-section-left-box {
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 400px;
+    padding: 90px 50px;
+    background-color: (--text-color-white);
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#about-section-right-box {
+    /* border: 2px solid rgb(35, 10, 177); */
+    border-radius: 10px;
+    position: relative;
+    height: 400px;
+    padding: 35px 30px;
+    width: 50%;
+}
+
+#about-section-right-box h3 {
+    font-size: 32px;
+    color: var(--text-color-black);
+    font-weight: 600;
+    
+}
+
+#about-section-right-box p {
+    font-size: 16px;
+    color: var(--text-color-black);
+}
+@media screen and (max-width: 1000px) {
+    #about-section-right-box {
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width: 768px) {
 
     .hero-section,
@@ -224,6 +269,7 @@ body {
         flex-direction: column;
         align-items: center;
         /* text-align: center; */
+        gap: 0px;
     }
    
      #hero-section-left-box,
@@ -231,7 +277,6 @@ body {
         width: 100%;
         text-align: left;
         padding: 30px 20px;
-        /* height: auto; */
         margin-top: 0;
     }
 
@@ -252,47 +297,20 @@ body {
         height: auto;
         text-align:left;
     }
+    #about-section-left-box{
+        text-align: center;
+    }
+    #about-section-left-box h4{
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 30px;
+    }
+    #about-section-left-box:hover{
+        transform: scale(1.02);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
-.about-section {
-    display: flex;
-    gap: 30px;
-    margin: 50px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    border: 1px solid red;
-}
-
-#about-section-left-box {
-    border: 1px solid gray;
-    border-radius: 10px;
-    height: 400px;
-    padding: 90px 50px;
-    background-color: (--text-color-white);
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-#about-section-right-box {
-    border: 2px solid rgb(35, 10, 177);
-    border-radius: 10px;
-    position: relative;
-    height: 400px;
-    padding: 35px 30px;
-    width: 50%;
-}
-
-#about-section-right-box h3 {
-    font-size: 32px;
-    color: var(--text-color-black);
-    font-weight: 600;
-
-}
-
-#about-section-right-box p {
-    font-size: 16px;
-    color: var(--text-color-black);
-}
 
 
 
