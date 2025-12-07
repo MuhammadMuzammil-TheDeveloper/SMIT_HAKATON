@@ -28,27 +28,21 @@ body {
     z-index: 9999;
 }
 
-/* Center all items */
 .preloader-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Top Animated Image */
 .animated-img {
     width: 150px;
     /* Adjust as you need */
     margin-bottom: 10px;
 }
-
-/* Main Logo */
 .preloader-logo {
     width: 150px;
     margin-bottom: 20px;
 }
-
-/* Loader Spinner */
 .loader {
     width: 50px;
     height: 50px;
@@ -169,7 +163,7 @@ body {
 #main-navbar-image {
     display: none;
 }
-
+    /* <!-- HERO SECTION --> */
 .hero-section {
     display: flex;
     gap: 30px;
@@ -216,6 +210,7 @@ body {
     width: 100%;
     display: block;
 }
+    /* <!-- ABOUT SECTION --> */
 
 .about-section {
     display: flex;
@@ -249,80 +244,14 @@ body {
     font-size: 32px;
     color: var(--text-color-black);
     font-weight: 600;
-    
+
 }
 
 #about-section-right-box p {
     font-size: 16px;
     color: var(--text-color-black);
 }
-@media screen and (max-width: 1000px) {
-    #about-section-right-box {
-        width: 100%;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-
-    .hero-section,
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-        /* text-align: center; */
-        gap: 0px;
-    }
-   
-     #hero-section-left-box,
-    #hero-section-right-box {
-        width: 100%;
-        text-align: left;
-        padding: 30px 20px;
-        margin-top: 0;
-    }
-
-    #hero-section-left-box h1 {
-        font-size: 35px;
-        line-height: 35px;
-    }
-
-    #hero-section-left-box h4 {
-        font-size: 40px;
-        line-height: 38px;
-    }
-
-    #about-section-left-box,
-    #about-section-right-box {
-        width: 100%;
-        padding: 30px 20px;
-        height: auto;
-        text-align:left;
-    }
-    #about-section-left-box{
-        text-align: center;
-    }
-    #about-section-left-box h4{
-        color: var(--main-color);
-        font-weight: 700;
-        font-size: 30px;
-    }
-    #about-section-left-box:hover{
-        transform: scale(1.02);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-}
-
-
-
-
-
-
-.cards-section {
-    /* border: 1px solid red; */
-}
-
-.row {
-    /* border: 1px solid blue; */
-}
+    /* <!-- CARDS SECTION --> */
 
 .col {
     /* border: 1px solid  black; */
@@ -360,8 +289,6 @@ body {
 .green-card {
     background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
     align-self: stretch;
-    /* height: 700px; */
-
 }
 
 .blue-card {
@@ -372,39 +299,40 @@ body {
     background-color: rgb(254 215 170 / var(--tw-bg-opacity, 1));
 }
 
+    /* <!-- JOURNEY SECTION --> */
 
-#hero-section-left-box3 {
-
-    /* height: 400px; */
-    padding: 0px;
-    /* background-color: (--text-color-white); */
-    max-width: 50%;
-    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
-
+.Journey-section {
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 #section-image {
-    width: 500px;
+    width: 600px;
+    /* width: 80%; */
+    display: block;
 }
 
-#Section-right-box3 {
+#Section-right-box {
     border-radius: 10px;
     position: relative;
     height: 400px;
     padding: 35px 30px;
-    max-width: 50%;
+    width: 50%;
 }
 
-#Section-right-box3 p {
+#Section-right-box p {
     margin-top: 30px;
 }
 
-#Section-right-box3 h3 {
+#Section-right-box h3 {
     font-size: 32px;
     color: var(--text-color-black);
     font-weight: 800;
 }
-
+    /* <!-- MISSION SECTION --> */
 
 #Mission-Section {
     text-align: center;
@@ -435,12 +363,101 @@ body {
     display: flex;
     gap: 30px;
     margin: 20px auto;
-    max-width: 80%;
+    width: 80%;
+    /* flex-wrap: wrap; */
+
+}
+#Mission-Card1 {
+    border-radius: 10px;
+    padding: 32px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
 }
 
-#Mission-Card1 {
-    /* border: 1px solid red; */
-    margin-top: 20px;
+#News-Section{
+    text-align: center;
+}
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+    #about-section-right-box {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:900px) {
+    #Mission-Card-Parent,
+    #News-Card-Parent {
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+
+    .hero-section,
+    .about-section,
+    .Journey-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #hero-section-left-box,
+    #hero-section-right-box {
+        width: 100%;
+        text-align: left;
+        padding: 30px 20px;
+        margin-top: 0;
+    }
+
+    #hero-section-left-box h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    #hero-section-left-box h4 {
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+    #about-section-left-box,
+    #about-section-right-box {
+        width: 100%;
+        padding: 30px 20px;
+        height: auto;
+        text-align: left;
+    }
+
+    #about-section-left-box {
+        text-align: center;
+    }
+
+    #about-section-left-box h4 {
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    #about-section-left-box:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    #Section-right-box,
+    #journey-section-left-box {
+        width: 100%;
+        /* padding: 30px 20px; */
+        height: auto;
+        text-align: left;
+
+    }
+
+    #section-image {
+        /* width: 600px; */
+        width: 100%;
+        /* display: block; */
+    }
 }
 
 
@@ -448,7 +465,8 @@ body {
     display: flex;
     gap: 30px;
     margin: 70px auto;
-    max-width: 60%;
+    width: 60%;
+    /* flex-wrap: wrap; */
 }
 
 .news-cards {
