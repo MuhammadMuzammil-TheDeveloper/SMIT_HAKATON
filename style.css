@@ -14,7 +14,7 @@ body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/* Preloader Fullscreen */
+/* Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -29,29 +29,24 @@ body {
 }
 
 .preloader-content {
+    position: relative;
+    width: 160px;
+    height: 160px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.animated-img {
-    width: 150px;
-    /* Adjust as you need */
-    margin-bottom: 10px;
-}
-
 .preloader-logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 130px;
+    z-index: 1;
 }
 
-.loader {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #ddd;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.animated-img {
+    position: absolute;
+    width: 260px;
+    z-index: 2;
+    pointer-events: none;
 }
 
 @keyframes spin {
